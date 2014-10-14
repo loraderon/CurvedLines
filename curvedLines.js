@@ -66,7 +66,7 @@
 	 						emulate the curvedLines (points total = real points * curvePointFactor)
 	 fitPointDist:     int  defines the x axis distance of the additional two points that are used
 	 						to enforce the min max condition. 
-	 forceMin:         int|undefined  forces the mins to never go below value
+	 forceMin:         number|undefined  forces the mins to never go below value
 	 						
 	 + line options (since v0.5 curved lines use flots line implementation for drawing
 	   => line options like fill, show ... are supported out of the box)
