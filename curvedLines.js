@@ -301,11 +301,11 @@
 					ynew[j] = a * ydata[min] + b * ydata[max] + ((a * a * a - a) * y2[min] + (b * b * b - b) * y2[max]) * (h * h) / 6;
 					
 					result.push(xnew[j]);
-                	if (curvedLinesOptions.forceMin == undefined) {
-                    	result.push(ynew[j]);
-                	} else {
-                    	result.push(ynew[j] < curvedLinesOptions.forceMin ? curvedLinesOptions.forceMin : ynew[j]);
-                	}
+					if (curvedLinesOptions.forceMin == undefined) {
+						result.push(ynew[j]);
+					} else {
+						result.push(ynew[j] < curvedLinesOptions.forceMin ? curvedLinesOptions.forceMin : ynew[j]);
+					}
 				}
 
 				return result;
